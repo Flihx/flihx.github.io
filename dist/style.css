@@ -7,6 +7,16 @@ body {
 
 body {
   background: #f3f3f3;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+}
+
+html {
+  position: static;
+  overflow-y: hidden;
+  height: 100%;
+  max-height: 100%;
 }
 
 
