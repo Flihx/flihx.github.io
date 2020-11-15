@@ -1,0 +1,139 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+body {
+  -webkit-text-size-adjust: none;
+  font-family: sans-serif;
+  min-height: 416px;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+:root {
+  --height: calc(100vh - 65px) !important;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  height: calc(var(--height) + 10px);
+}
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: var(--height);
+}
+
+.container {
+  position: relative;
+}
+
+.container .swipe {
+  height: 100%;
+}
+.container .swipe-wrap > div {
+  background: #2C2F33;
+  text-align: center;
+}
+.container .swipe-wrap > div b {
+  color: #14ADE5;
+  line-height: 300px;
+  font-size: 350%;
+}
+
+.swipe, .container {
+  width: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  font-size: 0;
+  width: 1%;
+}
+.prev:after, .next:after {
+  content: '';
+  font-family: 'entypo';
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  color: #F3F3F3;
+}
+.prev:hover:after, .next:hover:after {
+  text-shadow: 0 0 15px black;
+}
+
+.prev {
+  left: 0;
+}
+.prev:after {
+  /*content: '\E765';*/
+  left: 15px;
+}
+.prev:hover:after {
+  -moz-animation: bounce-left 1s infinite;
+  -webkit-animation: bounce-left 1s infinite;
+  animation: bounce-left 1s infinite;
+}
+
+.settings {
+  text-align: right;
+  float: right;
+  padding-top: 15px;
+  padding-right: 25px;
+}
+
+.refresh-button {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 20px;
+  color: #F3F3F3;
+}
+
+.topbar {
+  background-color: #23272A;
+}
+
+.main_header {
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 25px;
+  color: #F3F3F3;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 5px;
+}
+
+.border {
+  border-color: #F3F3F3;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20px;
+
+  width: calc(100vw - 10px) !important;
+  /*margin-left: 2px;
+  margin-right: 2px;*/
+}
+
+.next {
+  right: 0;
+}
+.next:after {
+  /*content: '\E766';*/
+  right: 15px;
+}
+.next:hover:after {
+  -moz-animation: bounce-right 1s infinite;
+  -webkit-animation: bounce-right 1s infinite;
+  animation: bounce-right 1s infinite;
+}
